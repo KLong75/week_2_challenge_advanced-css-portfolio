@@ -5,56 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Long Web Development Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
 </head>
 <body>
-  <header class="header">
-    <h1>Kevin Long | Web Developer</h1>
-    <figure id="kevin-pic">  
-      <img src="assets/Dazi_Lick_Kev400x400.jpg">
-    </figure>
+
+  <header>
+      <h1>
+        <a href="./index.html">
+        &lt Kevin Long | Web Developer /&gt
+        </a>
+    </h1>
+    
+    <!-- <figure id="kevin-pic">  
+      <img src="assets/images/Dazi_Lick_Kev400x400.jpg">
+    </figure> -->
     <nav>
       <ul>
-        <a href="#about-me" class="nav-link"><li>About Me</li></a>
-        <a href="#my-work" class="nav-link"><li>My Work</li></a>
-        <a href="#contact-me"class="nav-link" ><li>Contact Me</li></a>
+        <li><a href="#about-me" class="nav-link">&lt About Me /&gt</a></li>
+        <li><a href="#my-work" class="nav-link">&lt My Work /&gt</a></li>
+        <li> <a href="#contact-me"class="nav-link" >&lt Contact Me /&gt</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
     <section id="about-me" class="site-section">
       <h2 class="section-title">About Me</h2>
-
+      <div class="about-me-text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, delectus illum excepturi accusamus fugiat expedita ipsum ad odio reprehenderit error earum vitae, explicabo ex? Neque reiciendis quas assumenda facilis placeat.</p>
+      </div>
     </section>
-    <section id="my-work">
+
+    <section id="my-work" class="site-section">
       <h2 class="section-title">My Work</h2>
-      <article>
-        <h3>Musicology</h3>
+
+      <article class="project-card" id="feature-project">
+        <h3 class="project-title">Musicology</h3>
         <figure>
-          <a href="https://musicology-umekev.herokuapp.com/" target="_blank"><img src="assets/musicology-gif.gif" alt=""></a>
+          <a href="https://musicology-umekev.herokuapp.com/" target="_blank"><img src="assets/images/musicology-gif.gif" alt=""></a>
           <figcaption></figcaption>
         </figure>
       </article>
-      <article>
-          <h3>Movies R Us</h3>
+
+      <article class="project-card" class="site-section">
+          <h3 class="project-title">Movies R Us</h3>
           <figure>
-            <a href="https://klong75.github.io/Movies-R-Us-KJ/" target="_blank"><img src="assets/movies_r_us.gif" alt=""></a>
+            <a href="https://klong75.github.io/Movies-R-Us-KJ/" target="_blank"><img src="assets/images/movies_r_us.gif" alt=""></a>
             <figcaption></figcaption>
           </figure>
       </article>
 
-      <article>
-          <h3>Who Do</h3>
+      <article class="project-card">
+          <h3 class="project-title">Who Do</h3>
           <figure>
-            <a href="https://who-do-austin.herokuapp.com/login" target="_blank"><img src="assets/Who_Do_login.png" alt=""></a>
+            <a href="https://who-do-austin.herokuapp.com/login" target="_blank"><img src="assets/images/Who_Do_login.png" alt=""></a>
             <figcaption></figcaption>
           </figure>
       </article>
     </section>
 
-    <section id="contact-me">
+    <section id="contact-me" class="site-section">
       <h2 class="section-title">Contact Me</h2>
+      <ul>
+        <li>Phone: 512-975-0082</li>
+        <li>Email: kevinjlong75@gmail.com</li>
+        <li>GitHub: github.com/KLong75</li>
+        <li>LinkedIn: www.linkedin.com/in/klong75</li>
+      </ul>
     </section>
+
   </main>
+
   <footer>
 
   </footer>
