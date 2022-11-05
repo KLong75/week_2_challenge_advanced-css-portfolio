@@ -1,12 +1,14 @@
+/* whole app styles */
 * {
     box-sizing: border-box;
-  }
+}
   
 body {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
+/* header styles */
 header {
   display: flex;
   justify-content: space-between;
@@ -16,7 +18,6 @@ header {
   position: sticky;
   z-index: 9999;
   top: 0;
-
   background-image: url('');
   background-color:cadetblue;
 }
@@ -44,61 +45,79 @@ header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
   list-style: none;
-  
-  
- 
 }
 
-  header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
-    
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+/* main styles */
+main {
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  /* margin-top: 2%; */
+  margin: 5%;
+  flex-direction: column;
+}
+
+.site-section {
+  display: flex;
+  flex-wrap: initial;
+  margin: 20px;
   
-  main {
-    display: flex;
-    /* Forces elements to the next line if they don't fit */
-    flex-wrap: wrap;
-    /* margin-top: 2%; */
-    margin: 5%;
-    
-    flex-direction: column;
-  }
+}
 
-  .site-section {
-    display: flex;
-    margin: 20px;
-  }
+.section-title {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
-  .section-title {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
+.section-details-div {
+  border-left: solid black;
+  margin: 20px;
+  display: flex;
+}
 
-  .about-me-text {
-    border-left: solid black;
-  }
+.section-details-div p {
+  margin: 20px;
+  padding: 20px;
+}
 
-  .about-me-text p {
-    margin: 2%;
-  }
+.section-details-div ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content:space-between; */
+  list-style: none;
+}
 
-  .project-card {
-    border: solid black;
-    margin: 20px;
-  }
+.section-details-div ul li {
+  padding: 10px;
+}
 
-  .project-title {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
+.project-card-holder {
+  /* display: flex;
+  flex-wrap: wrap; */
+  border-left: solid black;
+  margin: 20px;
+  
+}
 
-  #my-work {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.project-card {
+  border: solid black;
+  margin: 20px;
+}
+
+.project-title {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#my-work {
+  display: flex;
+  flex-wrap: wrap;
+}
 
   
